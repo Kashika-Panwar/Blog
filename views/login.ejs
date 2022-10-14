@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+
+<div class="container" id="form">
+  <div class="jumbotron">
+    <form action="/login" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" name="username" id="username" placeholder="Username" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button><br>
+      <span>Don't have an account?<a href="/register"><strong>Sign up</strong></a></span>
+    </form>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

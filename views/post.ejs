@@ -1,0 +1,19 @@
+
+<%- include("partials/header"); -%>
+
+    <% let index = author.indexOf('@') %>
+
+    <h1><%=title%> - <span id="author"><%= author.substring(0,index) %></span></h1>
+
+    <p><%=content%></p>
+
+    <!-- <form  action="/delete" method="post">
+      <input type="hidden" value="<%= author.id %>" name="user_id" />
+      <button type="submit" name="button" class="btn btn-danger">Delete</button>
+    </form> -->
+
+    <a href="/posts/delete/<%=id%>"><button class = "btn btn-danger">Delete</button></a>
+
+
+
+<%- include("partials/footer"); -%>
